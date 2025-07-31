@@ -3601,7 +3601,7 @@ export default function VoltVersePlatform() {
                     <div className="flex space-x-2">
                       <Button
                         onClick={() => handleBookRental(rental.id)}
-                        disabled={!rental.isAvailable || bookingRental === rental.id}
+                        disabled={!rental.availability || bookingRental === rental.id}
                         className={`flex-1 ${
                           rental.isAvailable
                             ? "bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white"
